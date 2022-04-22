@@ -69,8 +69,12 @@ Save and submit the completed file for your homework submission.
 
 3. Command to make the `system.sh` script executable:
 
+        chmod +x system.sh
+
 **Optional**
 - Commands to test the script and confirm its execution:
+
+        
 
 **Bonus**
 - Command to copy `system` to system-wide cron directory:
