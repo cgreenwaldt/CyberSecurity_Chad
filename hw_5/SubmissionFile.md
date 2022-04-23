@@ -67,9 +67,9 @@ Save and submit the completed file for your homework submission.
 
 
                 free -h > ~/backups/freemem/free_mem.txt
-du -H > ~/backups/diskuse/disk_usage.txt
-lsof > ~/backups/openlist/open_list.txt
-df > ~/backups/freedisk/free_disk.txt
+                du -H > ~/backups/diskuse/disk_usage.txt
+                lsof > ~/backups/openlist/open_list.txt
+                df > ~/backups/freedisk/free_disk.txt
 
 ![bash_script](image/bash_script.png)
 
