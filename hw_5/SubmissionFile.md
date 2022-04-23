@@ -13,7 +13,7 @@ Save and submit the completed file for your homework submission.
         sysadmin@UbuntuDesktop:~/Projectsc$ tar xvf TarDocs.tar
 
 
-![USC](image/USC_Trojan.png)
+
 
 
 2. Command to **create** the `Javaless_Doc.tar` archive from the `TarDocs/` directory, while excluding the `TarDocs/Documents/Java` directory:
@@ -64,12 +64,23 @@ Save and submit the completed file for your homework submission.
 
     ```bash
     #!/bin/bash
-    [Your solution script contents here]
-    ```
+
+
+                free -h > ~/backups/freemem/free_mem.txt
+du -H > ~/backups/diskuse/disk_usage.txt
+lsof > ~/backups/openlist/open_list.txt
+df > ~/backups/freedisk/free_disk.txt
+
+![bash_script](image/bash_script.png)
+
+
 
 3. Command to make the `system.sh` script executable:
 
         chmod +x system.sh
+
+![executable_script](image/executable_script.png)
+
 
 **Optional**
 - Commands to test the script and confirm its execution:
