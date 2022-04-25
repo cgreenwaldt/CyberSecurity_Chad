@@ -134,7 +134,7 @@ Save and submit the completed file for your homework submission.
 
     ```bash
     [Your solution edits here]
-    ```
+note
 
 4. Command to restart `auditd`:
 
