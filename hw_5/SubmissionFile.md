@@ -100,8 +100,18 @@ Save and submit the completed file for your homework submission.
 
     - Add your config file edits below:
 
-    ```bash
-    [Your logrotate scheme edits here]
+    /var/log/auth.log {
+    weekly
+    rotate 7
+    missingok
+    notifempty
+    delaycompress
+}
+
+
+![logrotate](image/logrotate.png)
+
+
     ```
 ---
 
