@@ -109,7 +109,7 @@ Save and submit the completed file for your homework submission.
 }
 
 
-![logrotate](image/logrotate.png)
+![logrotate](image/logrotate1.png)
 
 
     ```
