@@ -7,21 +7,46 @@ Save and submit the completed file for your homework submission.
 **Step 1: Shadow People** 
 
 1. Create a secret user named `sysd`. Make sure this user doesn't have a home folder created:
-    - `Your solution command here`
-
-        Hello world cybersecurity sucks!!!!!
 
 
-![49ers](image/Football.png)
+        sysadmin@UbuntuDesktop:~$sudo adduser --no-create-home sysd
+
+![create_user_no_home](image/add_user_no_home.png)
+
+
+
+       
+
+
 
 2. Give your secret user a password: 
-    - `Your solution command here`
+
+
+        sysadmin@UbuntuDesktop:~$ sudo passwd sysd
+
+![set_up_password](image/set_up_password.png)
+
+
+
 
 3. Give your secret user a system UID < 1000:
-    - `Your solution command here`
+
+        sysadmin@UbuntuDesktop:/etc$ sudo usermod -u 14 sysd
+
+![change_UID](image/change_UID.png)
+
+
+
+        
 
 4. Give your secret user the same GID:
-   - `Your solution command here`
+
+
+        sysadmin@UbuntuDesktop:/etc$ sudo groupmod -g 14 sysd
+
+![change_group_GID](image/change_group_GID2.png)
+
+
 
 5. Give your secret user full `sudo` access without the need for a password:
    -  `Your solution command here`
