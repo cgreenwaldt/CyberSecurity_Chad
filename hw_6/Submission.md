@@ -64,7 +64,7 @@ Save and submit the completed file for your homework submission.
         sysd@UbuntuDesktop:/$ sudo visudo
 
 
-![Varifying](image\varifying.png)
+![Varifying](image/varifying.png)
 
 
 
