@@ -64,10 +64,10 @@ Save and submit the completed file for your homework submission.
         sysd@UbuntuDesktop:/$ sudo visudo
 
 
-![Verifying](image/verifying_no_password_required .png)
+![Varifying](image\varifying.png)
 
 
-    ```
+
 
 **Step 2: Smooth Sailing**
 
