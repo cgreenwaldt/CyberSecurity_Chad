@@ -49,12 +49,24 @@ Save and submit the completed file for your homework submission.
 
 
 5. Give your secret user full `sudo` access without the need for a password:
-   -  `Your solution command here`
+
+
+        sysd ALL=(ALL) NOPASSWD:ALL
+
+
+![sudo_access_no_password](image/Sudo_access_without_password.png)
+
+
 
 6. Test that `sudo` access works without your password:
 
-    ```bash
-    Your bash commands here
+
+        sysd@UbuntuDesktop:/$ sudo visudo
+
+
+![Verifying](image/verifying_no_password_required .png)
+
+
     ```
 
 **Step 2: Smooth Sailing**
