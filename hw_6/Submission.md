@@ -92,7 +92,12 @@ Save and submit the completed file for your homework submission.
 
 
 2. Exit the `root` account:
-    - `Your solution command here`
+
+        root:~\ $ su sysadmin
+
+![Switch_user](image/Switch_user.png)
+
+
 
 3. SSH to the target machine using your `sysd` account and port `2222`:
     - `Your solution command here`
