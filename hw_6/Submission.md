@@ -87,7 +87,7 @@ Save and submit the completed file for your homework submission.
   sysadmin@UbuntuDesktop:/etc/ssh$ sudo systemctl reload ssh
 
 
-![Restarting_sshd](image\Changing_ports_in_sshd_config.png)
+![Restarting_sshd](image/Changing_ports_in_sshd_config.png)
 
 
 
