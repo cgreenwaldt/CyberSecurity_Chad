@@ -73,13 +73,23 @@ Save and submit the completed file for your homework submission.
 
 1. Edit the `sshd_config` file:
 
-    ```bash
-    Your bash commands here
-    ```
+        sysadmin@UbuntuDesktop:/etc/ssh$ sudo nano sshd_config
+
+
+
+![Editing_sshd_config](image/Nano_sshd_config.png)
+
 
 **Step 3: Testing Your Configuration Update**
 1. Restart the SSH service:
-    - `Your solution command here`
+
+
+  sysadmin@UbuntuDesktop:/etc/ssh$ sudo systemctl reload ssh
+
+
+![Restarting_sshd](image\Changing_ports_in_sshd_config.png)
+
+
 
 2. Exit the `root` account:
     - `Your solution command here`
