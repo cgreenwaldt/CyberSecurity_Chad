@@ -73,7 +73,8 @@ Save and submit the completed file for your homework submission.
 
 1. Edit the `sshd_config` file:
 
-        sysadmin@UbuntuDesktop:/etc/ssh$ sudo nano sshd_config
+root:ssh\ $ nano sshd_config
+
 
 
 
@@ -84,7 +85,8 @@ Save and submit the completed file for your homework submission.
 1. Restart the SSH service:
 
 
-  sysadmin@UbuntuDesktop:/etc/ssh$ sudo systemctl reload ssh
+root:ssh\ $ sudo systemctl reload ssh
+
 
 
 ![Restarting_sshd](image/Changing_ports_in_sshd_config.png)
