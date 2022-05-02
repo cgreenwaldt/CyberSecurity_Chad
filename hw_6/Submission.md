@@ -56,7 +56,7 @@ Save and submit the completed file for your homework submission.
         sysd ALL=(ALL) NOPASSWD:ALL
 
 
-![sudo_access_no_password](image\Sudo_access_without_password.png)
+![sudo_access_no_password](image/Sudo_access_without_password.png)
 
 
 
