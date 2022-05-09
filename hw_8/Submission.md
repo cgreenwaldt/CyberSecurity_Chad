@@ -40,7 +40,7 @@ Phase 2:  "Some Syn for Nothin`"
 
 a) List the steps and commands used to complete the tasks.
 
-![Nmap_Syn_Scan](image\Syn_scan.png)
+![Nmap_Syn_Scan](image/Syn_scan.png)
 
 
 
