@@ -78,6 +78,12 @@ a) List the steps and commands used to complete the tasks.
 ![ssh](image/ssh_into_rockstar_server.png)
 
 
+![etc/hosts](image/etc_hosts_domain_ip_addresses.png)
+
+
+![nslookup](image/nslookup2.png)
+
+
 
 b) A summary of your findings for each testing phase.
 
