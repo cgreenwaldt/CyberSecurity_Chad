@@ -75,6 +75,8 @@ Phase 3 I Feel a DNS Change Comin' On
 
 a) List the steps and commands used to complete the tasks.
 
+![ssh](image/ssh_into_rockstar_server.png)
+
 
 
 b) A summary of your findings for each testing phase.
