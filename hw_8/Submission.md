@@ -9,19 +9,19 @@ Phase 1: "I'd like to Teach the World to Ping"
 
 a) The steps and commands used to complete the tasks.
 
-![FPING](image/FPING.png)
+![FPING](image/FPING2.png)
 
 
 b) A summary of your findings for each testing phase.
 
-![FPING_Results](image/FPING_Results.png)
+![FPING_Results](image/FPING_Results2.png)
 
 
 
 
 c) Any network vulnerabilities discovered.
 
-167.172.144.11 on the Hollywood application server is currently open and accepting connections. Since Rockstar Corp doesn't want any requests, this is a vulnerability.
+ 161.35.96.20 on the Hollywood application server is currently open and accepting connections. Since Rockstar Corp doesn't want any requests, this is a vulnerability.
 
 d) Findings associated with a hacker.
 
@@ -40,7 +40,7 @@ Phase 2:  "Some Syn for Nothin`"
 
 a) List the steps and commands used to complete the tasks.
 
-![Nmap_Syn_Scan](image/Syn_scan.png)
+![Nmap_Syn_Scan](image/Nmap_Syn_Scan.png)
 
 
 
@@ -48,11 +48,13 @@ b) A summary of your findings for each testing phase.
 
 According the Nmap port 22 is open and accepting connections 
 
+![syn_scan](image/Nmap_Syn_Scan.png)
+
 
 
 c) List any vulnerabilities discovered.
 
-Potentional vulnerability as Port 22 should not be open.
+Potential vulnerability as Port 22 should not be open.
 
 d) List any findings associated to a hacker.
 
@@ -69,9 +71,11 @@ f) Document the OSI layer where the findings were found.
 OSI Layer 4 Transport layer
 
 
-Phase 3 
+Phase 3 I Feel a DNS Change Comin' On
 
 a) List the steps and commands used to complete the tasks.
+
+
 
 b) A summary of your findings for each testing phase.
 
@@ -89,7 +93,7 @@ e) Document the mitigation recommendations to protect against the discovered vul
 f) Document the OSI layer where the findings were found.
 
 
-Phase 4
+Phase 4 "ShARP Dressed Man"
 
 a) List the steps and commands used to complete the tasks.
 
