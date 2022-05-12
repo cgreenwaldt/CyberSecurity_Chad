@@ -87,18 +87,26 @@ a) List the steps and commands used to complete the tasks.
 
 b) A summary of your findings for each testing phase.
 
-
+Ssh into rollingstone.com using the open IP address 161.35.96.20 on open port 22 using the credentials for Jimi. While in the system nano'd the etc/host file. Rollingstone was being directed to 98.137.246.8 rather than the correct host IP address. Using nslookup I found out the domain name for 98.137.246.8 is unknown.yahoo.com. 
 
 c) List any vulnerabilities discovered.
 
+Port 22 is open allowing for malicious actors to ssh into the system and change the etc/host file. 
 
-d) List any findings associated to a hacker.
+
+d) List any findings associated to a hacker. 
+
+There appears to be evidence of a DNS hijacking webtraffic to rollingstone.com to go to unknown.yahoo.com to rather than the correct host site. 
 
 
 e) Document the mitigation recommendations to protect against the discovered vulnerabilities.
 
+The etc/host file needs to be corrected to 161.35.96.20 and port 22 needs to be closed. 
+
 
 f) Document the OSI layer where the findings were found.
+
+This is in OSI layer 6 prestation layer. 
 
 
 Phase 4 "ShARP Dressed Man"
