@@ -113,7 +113,7 @@ Phase 4 "ShARP Dressed Man"
 
 a) List the steps and commands used to complete the tasks.
 
-Analyzed the ARP request and response file of webtraffic. Entered arp.opcode ==2 to analyze responses to IP requests. Also analyzed anything posted by employees on the company network by using the http.request.method =="POST".
+    Analyzed the ARP request and response file of webtraffic. Entered arp.opcode ==2 to analyze responses to IP requests. Also analyzed anything posted by employees on the company network by using the http.request.method =="POST".
 
 
 
