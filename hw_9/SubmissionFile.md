@@ -68,12 +68,37 @@ Document what a corrected DNS record should be.
 
  Mission 4
 
-  Confirm the DNS records for princessleia.site.
+Confirm the DNS records for princessleia.site.
 
+![DNS2](image/DNS2.png)
 
-![DNS](image/DNS server.png)
 
 
 
 
 Document how you would fix the DNS record to prevent this issue from happening again.  
+
+Mission 5
+
+View the Galaxy Network Map and determine the OSPF shortest path from Batuu to Jedha.
+
+![Networking](image/Mission5.png)
+
+Mission 6
+
+Figure out the Dark Side's secret wireless key by using Aircrack-ng.
+
+Use the Dark Side's key to decrypt the wireless traffic in Wireshark.
+
+Once you have decrypted the traffic, figure out the following Dark Side information:
+
+Mission 7
+
+Follow the steps from the TXT record.
+
+
+Note: A backup option is provided in the TXT record (as a website) in case the main telnet site is unavailable
+
+
+
+Take a screen shot of the results.
