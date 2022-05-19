@@ -58,25 +58,32 @@ Document how a CNAME should look by viewing the CNAME of www.theforce.net using 
 
 Explain why the sub page of resistance.theforce.net isn't redirecting to theforce.net.
 
-    The resistance.theforce.net is not listed as a cname for in the nds server for theforce.net so queries for that site is not being forwarded to theforce.net. 
+    The resistance.theforce.net is not listed as a cname for theforce.net in the nds server so queries for that site is not being forwarded to theforce.net. 
 
 
 Document what a corrected DNS record should be.
 
-    Non-authoritative answer: 
-    www.resistance.theforce.net
+    
+    www.resistance.theforce.net CNAME theforce.net
 
  Mission 4
 
 Confirm the DNS records for princessleia.site.
 
-![DNS2](image/DNS2.png)
+![DNS2](image\NSLOOKUP_NSSERVER2.png)
 
 
 
 
 
 Document how you would fix the DNS record to prevent this issue from happening again.  
+
+Add a secondary server
+
+princessleia.site nameserver = ns26.domaincontrol.com                
+princessleia.site nameserver = ns25.domaincontrol.com
+princessleia.site nameserver = ns2.galaxybackup.com
+
 
 Mission 5
 
