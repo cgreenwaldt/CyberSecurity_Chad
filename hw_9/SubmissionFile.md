@@ -70,7 +70,7 @@ Document what a corrected DNS record should be.
 
 Confirm the DNS records for princessleia.site.
 
-![DNS2](image\NSLOOKUP_NSSERVER2.png)
+![DNS2](image/NSLOOKUP_NSSERVER2.png)
 
 
 
