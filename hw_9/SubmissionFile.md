@@ -95,9 +95,21 @@ Mission 6
 
 Figure out the Dark Side's secret wireless key by using Aircrack-ng.
 
-Use the Dark Side's key to decrypt the wireless traffic in Wireshark.
+![Aircrack-ng](image/Aircrack-ng.png)
+
+
+
+Use the Dark Side's key to decrypt the wireless traffic in WiresharkA.
 
 Once you have decrypted the traffic, figure out the following Dark Side information:
+Host IP Addresses and MAC Addresses by looking at the decrypted ARP traffic.
+
+
+Document these IP and MAC Addresses, as the resistance will use these IP addresses to launch a retaliatory attack.
+
+
+![ARP_Poisoning2](image/ARP_Poisoning2.png)
+
 
 Mission 7
 
@@ -109,3 +121,14 @@ Note: A backup option is provided in the TXT record (as a website) in case the m
 
 
 Take a screen shot of the results.
+
+![star_asciimation](image/STAR_ASCIIMATION.png)
+
+![star2](image/STAR_ASCIIMATION2.png)
+
+
+
+
+
+
+
