@@ -47,7 +47,7 @@ Ransom Decrypter
 
 ![ransom](image/6keys.png)
 
-![answer](image\riddle7.png)
+![answer](image/riddle7.png)
 
 
 
