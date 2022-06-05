@@ -34,17 +34,17 @@ Name each of the seven stages for the Cyber Kill chain and provide a brief examp
 
 1. Stage 1: Reconnaissance for example the gathering of PII to sell on the dark web. 
 
-2. Stage 2: Weaponization
+2. Stage 2: Weaponization for example the creation of ransomware.
 
-3. Stage 3: Delivery  
+3. Stage 3: Delivery for example clicking on a malicious link in a phishing email. 
 
-4. Stage 4: Exploitation
+4. Stage 4: Exploitation as ransomware installs on the target network and creates a backdoor into the system.
 
-5. Stage 5: Installation for example clicking on a malicious link in a phishing email. 
+5. Stage 5: Installation ransomware notifying attacker of a successful infection. 
 
-6. Stage 6: Command and Control 
+6. Stage 6: Command and Control a malicious actor being able to take control of a system and move about looking for PII or other valuable data.
 
-7. Stage 7: Actions on Objectives 
+7. Stage 7: Actions on Objectives for example achieving control of the host computer and starting to encrypt target files.  
 
 
 #### Snort Rule Analysis
