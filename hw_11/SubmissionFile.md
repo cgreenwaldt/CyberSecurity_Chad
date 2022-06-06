@@ -16,7 +16,7 @@ The concept of defense in depth can be broken down into three different security
 
 3. Encryption, biometric fingerprint readers, firewalls, endpoint security, and intrusion detection systems are what type of security control?
 
-    Answer:  Technical Controls 
+    Answer:  Technical or Operational Controls 
 
 #### Intrusion Detection and Attack indicators
 
@@ -57,17 +57,17 @@ Snort Rule #1
 alert tcp $EXTERNAL_NET any -> $HOME_NET 5800:5820 (msg:"ET SCAN Potential VNC Scan 5800-5820"; flags:S,12; threshold: type both, track by_src, count 5, seconds 60; reference:url,doc.emergingthreats.net/2002910; classtype:attempted-recon; sid:2002910; rev:5; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 ```
 
-1. Break down the Sort Rule header and explain what is happening.
+1. Break down the Snort Rule header and explain what is happening.
 
-   Answer:
+   Answer: Apply this rule to all TCP packets to any IP address from ports 5800 to 5820 going to the home network with a message ET SCAN Potential VNC Scan 5800-5820. 
 
 2. What stage of the Cyber Kill Chain does this alert violate?
 
-   Answer:
+   Answer: Reconnaisance attackers probing for weakness and gathering intel. 
 
 3. What kind of attack is indicated?
 
-   Answer:
+   Answer: Port mapping 
 
 Snort Rule #2
 
@@ -77,21 +77,23 @@ alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET POLICY PE EXE or D
 
 1. Break down the Sort Rule header and explain what is happening.
 
-   Answer:
+   Answer: Any TCP packet going from port 80 
 
 2. What stage of the Cyber Kill Chain does this alert violate?
 
-   Answer:
+   Answer: Delivery 
 
 3. What kind of attack is indicated?
 
-   Answer:
+   Answer: Cross site scripting the injecting of  malicous code into a vulnerable web page. Can be used to copy a user's cookies to spoof the users credentials to gain access to PII. 
 
 Snort Rule #3
 
 - Your turn! Write a Snort rule that alerts when traffic is detected inbound on port 4444 to the local network on any port. Be sure to include the `msg` in the Rule Option.
 
-    Answer:
+    Answer: alert TCP any any -> any 4444{msg: "IP traffic to port 4444 detected"
+
+    )
 
 ### Part 2: "Drop Zone" Lab
 
@@ -108,9 +110,10 @@ Before getting started, you should verify that you do not have any instances of 
 
 - Run the command that removes any running instance of `ufw`.
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    ```
+
+![remove_ufw](image/Remove_ufw.png)
+
+
 
 #### Enable and start `firewalld`
 
@@ -118,10 +121,10 @@ By default, these service should be running. If not, then run the following comm
 
 - Run the commands that enable and start `firewalld` upon boots and reboots.
 
-    ```bash
-    $ <ADD COMMAND TO enable firewalld HERE>
-    $ <ADD COMMAND TO  start firewalld HERE>
-    ```
+
+![start&enable](image\Start&enable_firewalld.png)
+
+
 
   Note: This will ensure that `firewalld` remains active after each reboot.
 
@@ -129,9 +132,10 @@ By default, these service should be running. If not, then run the following comm
 
 - Run the command that checks whether or not the `firewalld` service is up and running.
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    ```
+
+![status_firewalld](image/firewalld_status.png)
+
+
 
 
 #### List all firewall rules currently configured.
@@ -140,19 +144,21 @@ Next, lists all currently configured firewall rules. This will give you a good i
 
 - Run the command that lists all currently configured firewall rules:
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    ```
 
-- Take note of what Zones and settings are configured. You many need to remove unneeded services and settings.
+![listall_firewallrules](image/listall_firewalld_rules.png)
+
+
+
+- Take note of what Zones and settings are configured. You may need to remove unneeded services and settings.
 
 #### List all supported service types that can be enabled.
 
 - Run the command that lists all currently supported services to see if the service you need is available
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    ```
+
+![list_available_services](image/firewalld_listavailable_services.png)
+
+
 
 - We can see that the `Home` and `Drop` Zones are created by default.
 
@@ -161,9 +167,10 @@ Next, lists all currently configured firewall rules. This will give you a good i
 
 - Run the command that lists all currently configured zones.
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    ```
+
+![Listzones](image\firewalld_listzones1.png)
+
+
 
 - We can see that the `Public` and `Drop` Zones are created by default. Therefore, we will need to create Zones for `Web`, `Sales`, and `Mail`.
 
@@ -171,11 +178,10 @@ Next, lists all currently configured firewall rules. This will give you a good i
 
 - Run the commands that creates Web, Sales and Mail zones.
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    ```
+
+![newzones](image/creating_new_zones.png)
+
+
 
 #### Set the zones to their designated interfaces:
 
