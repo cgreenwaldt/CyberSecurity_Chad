@@ -187,12 +187,10 @@ Next, lists all currently configured firewall rules. This will give you a good i
 
 - Run the commands that sets your `eth` interfaces to your zones.
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    ```
+![interfaces2zones](image/setfirewallinterfaces_zones.png)
+
+
+
 
 #### Add services to the active zones:
 
@@ -200,43 +198,49 @@ Next, lists all currently configured firewall rules. This will give you a good i
 
 - Public:
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    ```
+
+![addservicepublic](image/serviceadd_public.png)
+
+
 
 - Web:
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    ```
+
+
+![addserviceweb](image/addservice_web.png)
+
+
 
 - Sales
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    ```
+
+![addservicesales](image/addservice_mail.png)
+
+
 
 - Mail
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    ```
+
+![addservicemail](image/addservice_sales.png)
+
+
 
 - What is the status of `http`, `https`, `smtp` and `pop3`?
+
+
+![servicestatus](image/statusservice.png)
+
+
 
 #### Add your adversaries to the Drop Zone.
 
 - Run the command that will add all current and any future blacklisted IPs to the Drop Zone.
 
-     ```bash
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    ```
+
+
+![]()
+
+
 
 #### Make rules permanent then reload them:
 
