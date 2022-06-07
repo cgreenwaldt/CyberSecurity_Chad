@@ -199,7 +199,7 @@ Next, lists all currently configured firewall rules. This will give you a good i
 - Public:
 
 
-![addservicepublic](image/serviceadd_public.png)
+![addservicepublic](image/addservice_public2.png)
 
 
 
@@ -207,28 +207,28 @@ Next, lists all currently configured firewall rules. This will give you a good i
 
 
 
-![addserviceweb](image/addservice_web.png)
+![addserviceweb](image/addservice_web2.png)
 
 
 
 - Sales
 
 
-![addservicesales](image/addservice_mail.png)
+![addservicesales](image\addservice_sales2.png)
 
 
 
 - Mail
 
 
-![addservicemail](image/addservice_sales.png)
+![addservicemail](image\addservice_mail3.png)
 
 
 
 - What is the status of `http`, `https`, `smtp` and `pop3`?
 
 
-![servicestatus](image/statusservice.png)
+![servicestatus](image/statusservice2.png)
 
 
 
@@ -238,7 +238,7 @@ Next, lists all currently configured firewall rules. This will give you a good i
 
 
 
-![]()
+![dropzone](image/dropzone2.png)
 
 
 
@@ -248,9 +248,7 @@ It's good practice to ensure that your `firewalld` installation remains nailed u
 
 - Run the command that reloads the `firewalld` configurations and writes it to memory
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    ```
+![reload](image/reload.png)
 
 #### View active Zones
 
@@ -258,18 +256,23 @@ Now, we'll want to provide truncated listings of all currently **active** zones.
 
 - Run the command that displays all zone services.
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    ```
+
+![activezones](image/getactivezones.png)
+
+
+
+
 
 
 #### Block an IP address
 
 - Use a rich-rule that blocks the IP address `138.138.0.3`.
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    ```
+
+
+![richrule](image/richrule.png)
+
+
 
 #### Block Ping/ICMP Requests
 
@@ -277,9 +280,10 @@ Harden your network against `ping` scans by blocking `icmp ehco` replies.
 
 - Run the command that blocks `pings` and `icmp` requests in your `public` zone.
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    ```
+
+![blockrequests](image/blockrequests.png)
+
+
 
 #### Rule Check
 
@@ -287,13 +291,29 @@ Now that you've set up your brand new `firewalld` installation, it's time to ver
 
 - Run the command that lists all  of the rule settings. Do one command at a time for each zone.
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    ```
+ 
+
+
+
+![publicrules](image/publicrules.png)
+
+
+
+![salesrules](image/salesrules.png)
+
+
+
+![mailrules](image/mailrules.png)
+
+
+
+![webrules](image/webrules.png)
+
+
+
+![droprules](image/droprules.png)
+
+
 
 - Are all of our rules in place? If not, then go back and make the necessary modifications before checking again.
 
@@ -310,21 +330,21 @@ Now, we will work on another lab. Before you start, complete the following revie
 
 1. Name and define two ways an IDS connects to a network.
 
-   Answer 1:
+   Answer 1: Network intrusion detection system matches all traffic to a known library of attack signatures, examines network traffic, and it is easy to deploy hard to detect.
 
-   Answer 2:
+   Answer 2: Host based intrusion detection system is a second line of defense against traffic that gets through NIDS. Examines entire file systems on a host, compares them to previous snapshots and generates an alert if there is a significant difference. 
 
 2. Describe how an IPS connects to a network.
 
-   Answer:
+   Answer: IPS connects via a network tap, mirrored port, or SPAN. 
 
 3. What type of IDS compares patterns of traffic to predefined signatures and is unable to detect Zero-Day attacks?
 
-   Answer:
+   Answer: A signature based IDS would not detect a zero-day attack as it is good for identifying well-known attacks but is suspectible to new attacks until an update with the new attack signature is released. Is also vulnerable to packet manipulation that takes place during a zero-day attack. 
 
 4. Which type of IDS is beneficial for detecting all suspicious traffic that deviates from the well-known baseline and is excellent at detecting when an attacker probes or sweeps a network?
 
-   Answer:
+   Answer:An Anomaly based IDS is great at detecting sweeps of a network and detects anomalies from a set baseline. 
 
 #### Defense in Depth
 
@@ -332,72 +352,72 @@ Now, we will work on another lab. Before you start, complete the following revie
 
     1.  A criminal hacker tailgates an employee through an exterior door into a secured facility, explaining that they forgot their badge at home.
 
-        Answer:
+        Answer: Physical for tailgating also administrative for an employee allowing someone to bypass set policy to gain access. 
 
     2. A zero-day goes undetected by antivirus software.
 
-        Answer:
+        Answer: Technical as an anomaly based software would detect a zero-day attack. 
 
     3. A criminal successfully gains access to HR’s database.
 
-        Answer:
+        Answer: Technical network issue
 
     4. A criminal hacker exploits a vulnerability within an operating system.
 
-        Answer:
+        Answer: Technical operating software issue 
 
     5. A hacktivist organization successfully performs a DDoS attack, taking down a government website.
 
-        Answer:
+        Answer: Technical 
 
     6. Data is classified at the wrong classification level.
 
-        Answer:
+        Answer: Administrative
 
     7. A state sponsored hacker group successfully firewalked an organization to produce a list of active services on an email server.
 
-        Answer:
+        Answer: Technical as threat actor was able to scan the firewall for vulnerabilities.
 
 2. Name one method of protecting data-at-rest from being readable on hard drive.
 
-    Answer:
+    Answer: Encryption
 
 3. Name one method to protect data-in-transit.
 
-    Answer:
+    Answer: VPN
 
 4. What technology could provide law enforcement with the ability to track and recover a stolen laptop.
 
-   Answer:
+   Answer: Lojack for laptops that downloads software at the firmware level that has a tracking agent that calls out "Am I ok." Police call back no you are stolen call back in 15 minutes to collect GPS data. If the software is compromised it immediate downloads to latest version and is undetectable as it is on the firmware level. Source: https://www.techradar.com/news/computing/how-the-experts-track-a-stolen-laptop-1076388
 
 5. How could you prevent an attacker from booting a stolen laptop using an external hard drive?
 
-    Answer:
+    Answer: Encrpting your hard drive. 
 
 
 #### Firewall Architectures and Methodologies
 
 1. Which type of firewall verifies the three-way TCP handshake? TCP handshake checks are designed to ensure that session packets are from legitimate sources.
 
-  Answer:
+  Answer: circuit-level gateway firewall
 
 2. Which type of firewall considers the connection as a whole? Meaning, instead of looking at only individual packets, these firewalls look at whole streams of packets at one time.
 
-  Answer:
+  Answer: stateful firewalls 
 
 3. Which type of firewall intercepts all traffic prior to being forwarded to its final destination. In a sense, these firewalls act on behalf of the recipient by ensuring the traffic is safe prior to forwarding it?
 
-  Answer:
+  Answer: packet proxy firewall 
 
 
 4. Which type of firewall examines data within a packet as it progresses through a network interface by examining source and destination IP address, port number, and packet type- all without opening the packet to inspect its contents?
 
-  Answer:
+  Answer: packet filtering firewall
 
 
 5. Which type of firewall filters based solely on source and destination MAC address?
 
-  Answer:
+  Answer: MAC filtering firewall 
 
 
 
