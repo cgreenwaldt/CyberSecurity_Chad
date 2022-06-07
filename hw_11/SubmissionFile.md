@@ -59,15 +59,15 @@ alert tcp $EXTERNAL_NET any -> $HOME_NET 5800:5820 (msg:"ET SCAN Potential VNC S
 
 1. Break down the Snort Rule header and explain what is happening.
 
-   Answer: Apply this rule to all TCP packets to any IP address from ports 5800 to 5820 going to the home network with a message ET SCAN Potential VNC Scan 5800-5820. 
+   Answer: Apply this rule to all TCP packets from any external network from any port going to the home network to ports 5800-5820 with a message ET SCAN Potential VNC Scan 5800-5820. 
 
 2. What stage of the Cyber Kill Chain does this alert violate?
 
-   Answer: Reconnaisance attackers probing for weakness and gathering intel. 
+   Answer: Reconnaisance attackers probing for possible VNC connection.  
 
 3. What kind of attack is indicated?
 
-   Answer: Port mapping 
+   Answer:  Command and control of system via injecting code into the VNC connection. 
 
 Snort Rule #2
 
@@ -77,7 +77,7 @@ alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET POLICY PE EXE or D
 
 1. Break down the Sort Rule header and explain what is happening.
 
-   Answer: Any TCP packet going from port 80 
+   Answer: Any External network TCP packet going from port 80 to the home network on any port possible windows file download from an insecure site possible trojan injection.
 
 2. What stage of the Cyber Kill Chain does this alert violate?
 
@@ -85,15 +85,15 @@ alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET POLICY PE EXE or D
 
 3. What kind of attack is indicated?
 
-   Answer: Cross site scripting the injecting of  malicous code into a vulnerable web page. Can be used to copy a user's cookies to spoof the users credentials to gain access to PII. 
+   Answer:  Phishing download of malicious software from an insecure http port.
 
 Snort Rule #3
 
 - Your turn! Write a Snort rule that alerts when traffic is detected inbound on port 4444 to the local network on any port. Be sure to include the `msg` in the Rule Option.
 
-    Answer: alert TCP $EXTERNAL_NET 4444 -> $HOME-NET any (msg: "IP traffic to port 444 detected"
+    Answer: alert TCP $EXTERNAL_NET 4444 -> $HOME-NET any (msg: "IP traffic to port 4444 possible trojan_worm detected"
 
-    )
+    Source: https://www.speedguide.net/port.php?port=4444
 
 ### Part 2: "Drop Zone" Lab
 
