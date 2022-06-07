@@ -91,7 +91,7 @@ Snort Rule #3
 
 - Your turn! Write a Snort rule that alerts when traffic is detected inbound on port 4444 to the local network on any port. Be sure to include the `msg` in the Rule Option.
 
-    Answer: alert TCP any any -> any 4444{msg: "IP traffic to port 4444 detected"
+    Answer: alert TCP $EXTERNAL_NET 4444 -> $HOME-NET any (msg: "IP traffic to port 444 detected"
 
     )
 
