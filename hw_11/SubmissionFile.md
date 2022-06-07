@@ -168,7 +168,7 @@ Next, lists all currently configured firewall rules. This will give you a good i
 - Run the command that lists all currently configured zones.
 
 
-![Listzones](image\firewalld_listzones1.png)
+![Listzones](image/firewalld_listzones1.png)
 
 
 
@@ -214,14 +214,14 @@ Next, lists all currently configured firewall rules. This will give you a good i
 - Sales
 
 
-![addservicesales](image\addservice_sales2.png)
+![addservicesales](image/addservice_sales2.png)
 
 
 
 - Mail
 
 
-![addservicemail](image\addservice_mail3.png)
+![addservicemail](image/addservice_mail3.png)
 
 
 
