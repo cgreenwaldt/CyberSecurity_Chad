@@ -122,7 +122,7 @@ By default, these service should be running. If not, then run the following comm
 - Run the commands that enable and start `firewalld` upon boots and reboots.
 
 
-![start&enable](image\Start&enable_firewalld.png)
+![start&enable](image/Start&enable_firewalld.png)
 
 
 
