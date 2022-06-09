@@ -6,7 +6,7 @@ Save and submit the completed file for your homework submission.
 
 ---
 
-Mission 
+Mission 1 
 
 Determine and document the mail servers for starwars.com using NSLOOKUP.
 
