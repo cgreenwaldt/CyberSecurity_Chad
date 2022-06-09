@@ -142,7 +142,7 @@ Answer the following questions about sessions and cookies:
 
         HTTP/1.1 200 OK
         Content-type: text/html
-       **Set-Cookie: cart=Bob**
+#     Set-Cookie: cart=Bob
 ​
 
 ​
@@ -176,12 +176,24 @@ Look through the following example HTTP request and response and answer the foll
 
 
 17. What is the request method?
+
+
+        POST
+
+
 ​
 ​
 18. Which header expresses the client's preference for an encrypted response?
 ​
 ​
+
+
+
 19. Does the request have a user session associated with it?
+
+
+
+
 ​
 ​
 20. What kind of data is being sent from this request body?
