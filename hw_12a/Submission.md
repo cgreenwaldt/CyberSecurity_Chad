@@ -184,6 +184,11 @@ Look through the following example HTTP request and response and answer the foll
 ​
 ​
 18. Which header expresses the client's preference for an encrypted response?
+
+
+         Upgrade-Insecure-Requests: 1
+
+
 ​
 ​
 
@@ -193,10 +198,17 @@ Look through the following example HTTP request and response and answer the foll
 
 
 
+        Connection: keep-alive
+
 
 ​
 ​
 20. What kind of data is being sent from this request body?
+
+
+         username=Barbara&password=password
+
+
 ​
 ## HTTP Response
 ​
@@ -220,16 +232,41 @@ Look through the following example HTTP request and response and answer the foll
 21. What is the response status code?
 ​
 ​
+
+        200
+
+
 22. What web server is handling this HTTP response?
+
+
+        Apache
+
+
 ​
 ​
 23. Does this response have a user session associated to it?
+
+
+        Set-Cookie: SessionID=5
+
+
 ​
 ​
 24. What kind of content is likely to be in the [page content] response body?
 ​
 ​
+
+        gzipped file 
+
+
 25. If your class covered security headers, what security request headers have been included?
+
+
+        X-Content-Type: NoSniff
+        X-Frame-Options: DENY
+        X-XSS-Protection: 1; mode=block
+
+
 ​
 ## Monoliths and Microservices
 ​
@@ -242,14 +279,32 @@ Answer the following questions about monoliths and microservices:
 26. What are the individual components of microservices called?
 ​
 
+        loadbalancer
+        authentication server
+        user server
+        store application server
+        app database
+        credentials database
+        Inventory database
+
+
+
 ​
 27. What is a service that writes to a database and communicates to other services?
+
+
+
+        API
 ​
 ​
 
 
 28. What type of underlying technology allows for microservices to become scalable and have redundancy?
 ​
+
+        Containers
+
+
 
 ​
 ## Deploying and Testing a Container Set
@@ -261,8 +316,16 @@ Answer the following questions about multi-container deployment:
 29. What tool can be used to deploy multiple containers at once?
 ​
 
+        Docker
+
+
 ​
 30. What kind of file format is required for us to deploy a container set?
+
+
+        yaml file 
+
+
         
 ## Databases
 ​
@@ -270,13 +333,27 @@ Answer the following questions about multi-container deployment:
 31. Which type of SQL query would we use to see all of the information within a table called customers?
 ​
 ​
+        
+        SELECT
+
+
 
 32. Which type of SQL query would we use to enter new data into a table? (You don't need a full query, just the first part of the statement.)
+
+
+
+        INSERT INTO
+
 ​
 ​
 
 33. Why would we never run DELETE FROM <table-name>; by itself?
 ​
+
+
+        It will delete the entire database
+
+
 ---
 ​
 
