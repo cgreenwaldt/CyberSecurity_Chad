@@ -20,27 +20,72 @@ Answer the following questions about the HTTP request and response process.
 
 
 2. What are the different parts of an HTTP request?
+
+
+        request line
+        headers
+        whitespace
+
+
 ​
 ​
 3. Which part of an HTTP request is optional?
 ​
 ​
+
+        body
+
+
 4. What are the three parts of an HTTP response?
+
+
+    status line
+    headers
+    response body 
+
+
 ​
 ​
 5. Which number class of status codes represents errors?
+
+
+        400's and 500's error codes mean their is error on either the client side or the server side. 
+
+
 ​
 ​
 6. What are the two most common request methods that a security professional will encounter?
+
+
+        GET and POST
+
+
+
+
+        
+
+
 ​
 ​
 7. Which type of HTTP request method is used for sending data?
+
+
+        POST and PUT 
+
+
 ​
 ​
 8. Which part of an HTTP request contains the data being sent to the server?
+
+
+
+        Body 
 ​
 ​
 9. In which part of an HTTP response does the browser receive the web code to generate and style a web page?
+
+
+Body 
 ​
 ## Using Curl
 ​
@@ -51,18 +96,38 @@ Answer the following questions about curl:
 
 10. What are the advantages of using curl over the browser?
 ​
-​
+​       
+        
+        Curl can transfer data to or from a server witout user interaction. 
 
 11. Which curl option is used to change the request method?
+
+
+curl -X
+
+
 ​
 ​
 12. Which curl option is used to set request headers?
 ​
 ​
+
+
+        curl -H
 13. Which curl option is used to view the response header?
+
+
+        curl -I
+
+
 ​
 ​
 14. Which request method might an attacker use to figure out which HTTP requests an HTTP server will accept?
+
+
+        OPTION
+
+
 ​
 ## Sessions and Cookies
 ​
@@ -77,7 +142,7 @@ Answer the following questions about sessions and cookies:
 
         HTTP/1.1 200 OK
         Content-type: text/html
-        Set-Cookie: cart=Bob
+       **Set-Cookie: cart=Bob**
 ​
 
 ​
