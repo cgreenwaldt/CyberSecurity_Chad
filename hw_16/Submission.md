@@ -9,10 +9,11 @@ Web Application 1: Your Wish is My Command Injection
 
 ![command_injection](images/Command_injection.png)
 
+![command_injection2](images/Command_injection2.png)
 
 
 
-The main problem with command injection are web applications that do not validate user input. Security professionals can use a whitelisting approach to validate user input only allowing certain IP addresses and search queries in the search bar on your web application. Anything beyond the approved list will be denied. Source: https://resources.infosecinstitute.com/topic/how-to-mitigate-command-injection-vulnerabilities/
+The main problem with command injection are web applications that are not set up with  user input validation protocols. Security professionals can use a whitelisting approach to validate user input only allowing certain IP addresses and search queries in the search bar on your web application. Anything beyond the approved list will be denied. Source: https://resources.infosecinstitute.com/topic/how-to-mitigate-command-injection-vulnerabilities/
 
 
 
